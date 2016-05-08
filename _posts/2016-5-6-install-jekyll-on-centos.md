@@ -56,6 +56,6 @@ sudo gem install jekyll-paginate
 
 jekyll new my-awesome-site
 cd my-awesome-site
-jekyll serve -H 0.0.0.0
+jekyll server -H 0.0.0.0
 
 ```
