@@ -34,8 +34,7 @@ template、templateUrl、$templateCache
 
 HelloAngular_Directive.html
 
-``` html
-
+```html
 <!doctype html>
 <html ng-app="MyModule">
 	<head>
@@ -50,13 +49,12 @@ HelloAngular_Directive.html
 	<script src="framework/angular-1.3.0.14/angular.js"></script>
 	<script src="HelloAngular_Directive.js"></script>
 </html>
-
 ```
 
 
 HelloAngular_Directive.js
 
-``` javascript
+```javascript
 
 var myModule = angular.module("MyModule", []);
 myModule.directive("hello", function() {
