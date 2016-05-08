@@ -103,6 +103,7 @@ controller
 ----------------------------------------------------------------
 
 HelloAngular1.html
+
 ```html
 <!doctype html>
 <html ng-app>
@@ -119,6 +120,7 @@ HelloAngular1.html
 ```
 
 HelloAngular1.js
+
 ```javascript
 function HelloAngular($scope){
 	$scope.greeting={text:'Hello'};
@@ -132,6 +134,7 @@ function HelloAngular($scope){
 ----------------------------------------------------------------
 
 MVC3.html
+
 ```html
 <!doctype html>
 <html ng-app>
@@ -157,6 +160,7 @@ MVC3.html
 
 
 MVC3.js
+
 ```javascript
 function CommonController($scope){
 	$scope.commonFn=function(){
@@ -216,6 +220,7 @@ model
 ----------------------------------------------------------------
 
 Scope1.html
+
 ```html
 
 <!doctype html>
@@ -243,6 +248,7 @@ Scope1.html
 ```
 
 Scope1.js
+
 ```javascript
 
 function GreetCtrl($scope,$rootScope){
@@ -263,6 +269,7 @@ function ListCtrl($scope){
 ----------------------------------------------------------------
 
 Scope2.html
+
 ```html
 
 <!doctype html>
