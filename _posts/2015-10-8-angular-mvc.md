@@ -52,6 +52,7 @@ view
 HelloAngular_Directive.html
 
 ```html
+
 <!doctype html>
 <html ng-app="MyModule">
 	<head>
@@ -62,6 +63,7 @@ HelloAngular_Directive.html
 	<script src="js/angular-1.3.0.js"></script>
 	<script src="HelloAngular_Directive.js"></script>
 </html>
+
 ```
 
 HelloAngular_Directive.js
