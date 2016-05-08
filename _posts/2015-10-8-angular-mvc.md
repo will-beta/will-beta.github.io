@@ -67,8 +67,8 @@ HelloAngular_Directive.html
 ```
 
 HelloAngular_Directive.js
-```javascript
 
+```javascript
 var myModule = angular.module("MyModule", []);
 myModule.directive("hello", function() {
     return {
@@ -77,7 +77,6 @@ myModule.directive("hello", function() {
         replace: true
     }
 });
-
 ```
 
 
