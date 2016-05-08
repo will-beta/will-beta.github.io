@@ -25,6 +25,7 @@ MVC框架
 =================================================================================
 
 /admin.php
+
 ``` php
 <?php
 define('APP_NAME','AdminApp');
@@ -118,6 +119,7 @@ class Index{
 ### /ThinkPHP/Conf/ 目录下包含各种默认配置
 
 convention.php
+
 ```php
 <?php
 return array(
@@ -177,6 +179,7 @@ http://localhost/muke/index.php?s=/Index/user/id/1.html
 ### 配置方式
 
 Conf/config.php
+
 ```php
 return array(
     'URL_MODEL' =>  '<模式值>',
@@ -187,6 +190,7 @@ return array(
 ### 示例
 
 Lib/Action/IndexAction.class.php
+
 ```php
 class IndexAction extends Action{
     public function index(){
@@ -273,6 +277,7 @@ MVC之视图模板
 ### 写视图模板
 
 Tpl/Index/test.html
+
 ```html
 <?php
 echo $name;
@@ -288,6 +293,7 @@ echo $name;
 ### 在控制器中调用
 
 IndexAction.class.php
+
 ```php
 $name='Donsen';
 $this->name=$name;
@@ -418,6 +424,7 @@ return array(
 ### 实例化基础模型
 
 IndexAction.class.php
+
 ```php
 $user=new Model('user');//表名，表前缀，数据库连接信息
 //$user=M('user');
@@ -429,6 +436,7 @@ dump($data);
 ### 实例化用户自定义模型
 
 UserModel.class.php
+
 ```php
 <?php
 class UserModel extends Model{
@@ -441,6 +449,7 @@ class UserModel extends Model{
 ```
 
 IndexAction.class.php
+
 ```php
 <?php
 $user=new UserModel();
@@ -454,6 +463,7 @@ dump($data);
 ### 实例化空模型
 
 IndexAction.class.php
+
 ```php
 <?php
 $model=M();
@@ -501,6 +511,7 @@ public function user(){
 --------------------------------------------
 
 UserModel.class.php
+
 ```php
 <?php
 class UserModel extends CommonModel{
@@ -522,6 +533,7 @@ class UserModel extends CommonModel{
 ```
 
 IndexAction.class.php
+
 ```php
 <?php
 class IndexAction extends Action{
