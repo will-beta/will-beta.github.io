@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>跳转至目标站</title>
+</head>
+<body>
+<div id="msg">跳转中...</div>
+<script>
+    function toProject(name) {
+        var dest = "https://gitcafe.com/will-beta/" + name;
+        return dest;
+    }
+
+    function toSite(name) {
+        var dest = "/";
+        switch (name) {
+            case "cnblogs":
+                dest = "http://www.cnblogs.com/beta2013/";
+                break;
+            case "csdn":
+                dest = "http://blog.csdn.net/iaki2008/";
+                break;
+            case "github":
+                dest = "https://github.com/will-beta/";
+                break;
+            case "gitcafe":
+                dest = "https://gitcafe.com/will-beta/";
+                break;
+        }
+        return dest;
+    }
+
+    function resolve(url) {
+        var dest = "/";
+        if (url) {
+            var parts = url.split("?");
+            if (parts.length > 1) {
+                var pair = parts[1].split("=");
+                if (pair.length > 1) {
+                    var type = pair[0];
+                    var name = pair[1];
+                    switch (type) {
+                        case "project":
+                            dest = toProject(name);
+                            break;
+                        case "site":
+                            dest = toSite(name);
+                            break;
+                    }
+                }
+
+            }
+        }
+        return dest;
+    }
+
+    location.href = resolve(location.href);
+</script>
+</body>
+</html>

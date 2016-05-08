@@ -1,0 +1,21 @@
+---
+title: 分类
+---
+<link rel="stylesheet" href="/css/article-class.css">
+<div id="container">
+    {% for cat in site.categories %}
+    <div name="{{ cat[0] }}" class="class">
+        {% for post in cat[1] %}
+        <div>
+            <span>{{post.date | date:"%Y/%m/%d"}}</span>
+            <a href="{{post.url}}"> {{post.title}}</a>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    <script src="http://apps.bdimg.com/libs/require.js/2.1.9/require.min.js"
+            data-main="/js/article-class"
+            async="async"
+            defer="defer">
+    </script>
+</div>

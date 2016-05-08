@@ -1,0 +1,16 @@
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "pages"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "posts"
+
+paginate: 10
+paginate_path: "page:num"

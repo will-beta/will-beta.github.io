@@ -1,13 +1,98 @@
 ---
-layout: default
-title: 我的Blog
+title: will-beta
+layout: others
 ---
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-    {% for post in site.posts %}
-    <li>
-        {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            <div class="left-column">
+                <div class="card">
+                    <div class="title">
+                        <a href="/">
+                            <img src="/img/portrait.jpg"/>
+                            {{ page.title }}
+                        </a>
+                    </div>
+                    <div class="comment">疯一样的 代码仔～</div>
+                </div>
+
+                <div class="main-menu">
+                    <div class="menu-item">
+                        <a href="guestbook.html">
+                            <img src="/img/guestbook.png" alt="留言" class="small-icon"/>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="search.html">
+                            <img src="/img/search.png" alt="搜索" class="small-icon"/>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="article-class">
+                    <div class="article-categories">
+                        分类
+                        <ul>
+                            {% for cat in site.categories %}
+                            <li>
+                                <a href="/categories.html#{{ cat[0] }}">
+                                    {{ cat[0] }}
+                                    <span class="item-count">{{ cat[1].size }}</span>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="article-tags">
+                        标签
+                        <ul>
+                            {% for cat in site.tags %}
+                            <li>
+                                <a href="/tags.html#{{ cat[0] }}">
+                                    {{ cat[0] }}
+                                    <span class="item-count">{{ cat[1].size }}</span>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="span10">
+            <ul class="blog-list">
+                {% for post in paginator.posts %}
+                <li>
+                    <span>{{ post.date | date:"%Y/%m/%d" }}</span>
+                    <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            <div>
+                {% if paginator.total_pages > 1 %}
+
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <span class="active">{{ page }}</span>
+                {% elsif page == 1 %}
+                <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                {% else %}
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{page }}</a>
+                {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
+                {% endif %}
+
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="/css/index.css"/>
