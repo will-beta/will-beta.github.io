@@ -50,6 +50,7 @@ view
 ----------------------------------------------------------------
 
 HelloAngular_Directive.html
+
 ```html
 <!doctype html>
 <html ng-app="MyModule">
