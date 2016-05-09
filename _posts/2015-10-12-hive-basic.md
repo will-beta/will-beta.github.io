@@ -133,6 +133,7 @@ MapReduce调用
 ### 配置
 
 .bash_profile
+
 ```bash
 JAVA_HOME=/root/training/jdk1.7.0_75
 HADOOP_HOME=/root/training/hadoop-2.4.1
@@ -175,6 +176,7 @@ hive
 * 将mysql-connector-java-5.1.7-bin.jar拷贝至hive的lib目录中
 
 * vim conf/hive_site.xml
+
 ```xml
 <?xml version=“1.0”?>  
 <?xml-stylesheet type=“text/xsl” href=“configuration.xsl”?>  
@@ -281,6 +283,7 @@ jdk/lib/tools.jar
 ### 配置
 
 在.xml中增加以下配置
+
 ```xml
 <property>
     <name>hive.hwi.listen.host</name>
@@ -457,6 +460,7 @@ explain select * from sample_data where gender='M';
 ### 示例
 
 准备数据
+
 ```bash
 hdfs dfs -put student01.txt /input
 hdfs dfs -put student02.txt /input
@@ -464,6 +468,7 @@ hdfs dfs -put student03.txt /input
 ```
 
 创建表
+
 ```sql
 create external table external_student
 (sid int,sname string,age int)
@@ -472,17 +477,20 @@ on '/input';
 ```
 
 查看数据
+
 ```sql
 select * from external_student;
 ```
 
 
 移除数据
+
 ```bash
 hdfs dfs -rm /input/student03.txt
 ```
 
 再次查看数据
+
 ```sql
 select * from external_student;
 ```

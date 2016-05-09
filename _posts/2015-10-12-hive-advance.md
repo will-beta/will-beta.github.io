@@ -91,6 +91,7 @@ hive的数据查询
 查询语法
 ---------------------------------------
 
+```sql
 SELECT [ALL | DISTINCT] select_expr,select_expr,...
 FROM table_reference
 [WHERE where_condition]
@@ -100,6 +101,7 @@ FROM table_reference
  | [ORDER BY col_list] 
 ]
 [LIMIT number]
+```
 
 DISTRIBUTE BY：指定分发器（partitioner）,多Reducer可用
 
@@ -397,6 +399,7 @@ hive安装目录/lib目录下的hive-jdbc.jar与其它文件得拷贝至工程�
 ### 示例
 
 JDBCUtils.java
+
 ```java
 package demo.utils;
 import java.sql.Connection;
@@ -465,6 +468,7 @@ public class JDBCUtils {
 ```
 
 HiveJDBCDemo.java
+
 ```java
 package demo.hive;
 import java.sql.Connection;

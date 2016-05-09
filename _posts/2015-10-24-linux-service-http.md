@@ -315,6 +315,8 @@ elinks http://www.virt3.com/
 ```
 
 /var/www/virt3/webapp.wsgi
+
+
 ```python
 #!/usr/bin/python
 def application(environ, start_response):
@@ -327,6 +329,7 @@ def application(environ, start_response):
 ```
 
 /etc/httpd/conf.d/virt3.conf
+
 ```
 <VirtualHost 192.168.0.106:80>
  DocumentRoot /var/www/virt3

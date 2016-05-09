@@ -218,6 +218,7 @@ nginx下rewrite配置
 ---------------------------------
 
 /etc/nginx/conf.d/static.singwa.com.conf
+
 ```
 
 location / {

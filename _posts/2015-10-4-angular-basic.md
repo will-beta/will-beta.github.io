@@ -26,6 +26,7 @@ $scope的生命期：creation,matcher registration,model mutation,mutation obser
 ## 示例1
 
 HelloAngular1.html
+
 ```html
 
 <!doctype html>
@@ -45,6 +46,7 @@ HelloAngular1.html
 ```
 
 HelloAngular1.js
+
 ```javascript
 
 function HelloAngular($scope){
@@ -56,6 +58,7 @@ function HelloAngular($scope){
 ## 示例2
 
 Scope1.html
+
 ```html
 
 <!doctype html>
@@ -85,6 +88,7 @@ Scope1.html
 ```
 
 Scope1.js
+
 ```javascript
 
 function GreetCtrl($scope,$rootScope){
@@ -101,6 +105,7 @@ function ListCtrl($scope){
 ## 示例3
 
 Scope2.html
+
 ```html
 
 <!doctype html>
@@ -217,6 +222,7 @@ myModule.factory('myService',['$http',myService]);
 ## 示例
 
 BooksStore.html
+
 ```html
 
 <!doctype html>
@@ -242,6 +248,7 @@ BooksStore.html
 ```
 
 BooksStore.js
+
 ```javascript
 
 var bookStoreModule=angular.module('my.new.module',[]);
@@ -286,6 +293,7 @@ bookStoreModule.directive('addBookButton',['Book',function(Book){
 # Filter
 
 Query.html
+
 ```html
 
 <!doctype html>
@@ -319,6 +327,7 @@ Query.html
 ```
 
 Query.js
+
 ```javascript
 
 function PhoneListCtrl($scope){
@@ -359,6 +368,7 @@ ng默认的TTL是10次。
 ## 示例
 
 HelloAngular3.html
+
 ```html
 
 <!doctype html>
@@ -379,6 +389,7 @@ HelloAngular3.html
 ```
 
 HelloAngular3.js
+
 ```javascript
 
 var myModule=angular.module('HelloAngular',[]);
@@ -430,6 +441,7 @@ Angular封装UI组件的基础：指令嵌套，指令处理HTML元素，指令�
 ## 示例1
 
 Directive1.html
+
 ```html
 
 <!doctype html>
@@ -447,6 +459,7 @@ Directive1.html
 ```
 
 Directive1.js
+
 ```javascript
 
 var myModule=angular.module('MyModule',[]);
@@ -463,6 +476,7 @@ myModule.directive('hello',function(){
 ## 示例2
 
 ExpanderSimple.html
+
 ```html
 
 <!doctype html>
@@ -484,6 +498,7 @@ ExpanderSimple.html
 ```
 
 ExpanderSimple.js
+
 ```javascript
 
 var expanderModule=angular.module('expanderModule',[]);

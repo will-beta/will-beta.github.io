@@ -43,6 +43,7 @@ sitemap:
 ---------------------------------------------------------
 
 index.html
+
 ```html
 <!doctype html>
 <html ng-app="bookStoreApp">
@@ -69,12 +70,14 @@ index.html
 
 
 hello.html
+
 ```html
 <p>{{greeting.text}},Angular</p>
 ```
 
 
 bookList.html
+
 ```html
 <ul>
     <li ng-repeat="book in books">
@@ -85,6 +88,7 @@ bookList.html
 
 
 app.js
+
 ```javascript
 var bookStoreApp = angular.module('bookStoreApp', [
     'ngRoute', 'ngAnimate', 'bookStoreCtrls', 'bookStoreFilters',
@@ -106,6 +110,7 @@ bookStoreApp.config(function($routeProvider) {
 
 
 controllers.js
+
 ```javascript
 var bookStoreCtrls = angular.module('bookStoreCtrls', []);
 
@@ -134,6 +139,7 @@ bookStoreCtrls.controller('BookListCtrl', ['$scope',
 
 
 directives.js
+
 ```javascript
 var bookStoreDirectives = angular.module('bookStoreDirectives', []);
 
@@ -148,6 +154,7 @@ bookStoreDirectives.directive('bookStoreDirective_2', ['$scope',
 
 
 filters.js
+
 ```javascript
 var bookStoreFilters = angular.module('bookStoreFilters', []);
 
@@ -162,6 +169,7 @@ bookStoreFilters.filter('bookStoreFilter_2', ['$scope',
 
 
 services.js
+
 ```javascript
 var bookStoreServices = angular.module('bookStoreServices', []);
 
@@ -188,6 +196,7 @@ bookStoreServices.service('bookStoreService_2', ['$scope',
 ---------------------------------------------------------
 
 UIRoute1.html
+
 ```html
 <!doctype html>
 <html ng-app="MyUIRoute">
@@ -210,6 +219,7 @@ UIRoute1.html
 
 
 UIRoute1.js
+
 ```javascript
 var myUIRoute = angular.module('MyUIRoute', ['ui.router', 'ngAnimate']);
 myUIRoute.config(function($stateProvider, $urlRouterProvider) {
@@ -242,6 +252,7 @@ myUIRoute.config(function($stateProvider, $urlRouterProvider) {
 
 
 state1.html
+
 ```html
 <h1>State 1</h1>
 <hr/>
@@ -251,6 +262,7 @@ state1.html
 
 
 state1.list.html
+
 ```html
 <h3>List of State 1 Items</h3>
 <ul>
@@ -260,6 +272,7 @@ state1.list.html
 
 
 state2.html
+
 ```html
 <h1>State 2</h1>
 <hr/>
@@ -269,6 +282,7 @@ state2.html
 
 
 state2.list.html
+
 ```html
 <h3>List of State 2 Things</h3>
 <ul>
@@ -281,6 +295,7 @@ state2.list.html
 ---------------------------------------------------------
 
 UIRoute2.html
+
 ```html
 <!doctype html>
 <html ng-app="routerApp">
@@ -317,6 +332,7 @@ UIRoute2.html
 
 
 UIRoute2.js
+
 ```javascript
 var routerApp = angular.module('routerApp', ['ui.router']);
 routerApp.config(function($stateProvider, $urlRouterProvider) {
@@ -372,6 +388,7 @@ routerApp.controller('Controller', function($scope) {
 
 
 about.html
+
 ```html
 <div class="jumbotron text-center">
     <h1>The About Page</h1>
@@ -391,6 +408,7 @@ about.html
 
 
 home.html
+
 ```html
 <div class="jumbotron text-center">
     <h1>Home</h1>
@@ -405,6 +423,7 @@ home.html
 
 
 home-list.html
+
 ```html
 <ul>
     <li ng-repeat="topic in topics">{{ topic }}</li>
@@ -413,6 +432,7 @@ home-list.html
 
 
 table-data.html
+
 ```html
 <h2>Ice-Creams</h2>
 <table class="table table-hover table-striped table-bordered">
@@ -437,6 +457,7 @@ table-data.html
 ---------------------------------------------------------
 
 UIRoute3.html
+
 ```html
 <!doctype html>
 <html ng-app="routerApp">
@@ -459,6 +480,7 @@ UIRoute3.html
 
 
 UIRoute3.js
+
 ```javascript
 var routerApp = angular.module('routerApp', ['ui.router']);
 routerApp.config(function($stateProvider, $urlRouterProvider) {
@@ -541,6 +563,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 
 
 home.html
+
 ```html
 <div class="jumbotron text-center">
     <h2>首页</h2>
@@ -552,6 +575,7 @@ home.html
 
 
 index.html
+
 ```html
 <div class="container">
     <div ui-view="topbar"></div>
@@ -561,6 +585,7 @@ index.html
 
 
 topbar.html
+
 ```html
 <nav class="navbar navbar-inverse" role="navigation">
     <div class="navbar-header">
@@ -588,6 +613,7 @@ topbar.html
 
 
 usermng.html
+
 ```html
 <div class="row">
     <div class="col-md-3">
@@ -616,6 +642,7 @@ usermng.html
 
 
 highendusers.html
+
 ```html
 <div class="row">
     <div class="col-md-12">
@@ -664,6 +691,7 @@ highendusers.html
 
 
 normalusers.html
+
 ```html
 <div class="alert alert-success" role="alert">
     <strong>Well done!</strong>You successfully read <a href="#" class="alert-link">this important alert message</a>.
@@ -681,6 +709,7 @@ normalusers.html
 
 
 lowusers.html
+
 ```html
 <div class="btn-toolbar" role="toolbar">
     <div class="btn-group">
@@ -712,6 +741,7 @@ lowusers.html
 
 
 addusertypeform.html
+
 ```html
 <h3>新增用户</h3>
 <form class="form-horizontal" role="form">

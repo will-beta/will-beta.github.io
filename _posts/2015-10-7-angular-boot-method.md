@@ -11,6 +11,7 @@ sitemap:
 ==============
 
 Boot1.html：有ng-app值
+
 ```html
 <html ng-app="MyModule">
 	<head>
@@ -26,6 +27,7 @@ Boot1.html：有ng-app值
 ```
 
 Boot1.js
+
 ```javascript
 var myModule = angular.module("MyModule", []);
 myModule.controller('MyCtrl', ['$scope',
@@ -44,6 +46,7 @@ myModule.controller('MyCtrl', ['$scope',
 =============
 
 Boot1.html：没有ng-app值
+
 ```html
 <html>
 	<head>
@@ -60,6 +63,7 @@ Boot1.html：没有ng-app值
 
 
 Boot1.js
+
 ```javascript
 var myModule = angular.module("MyModule", []);
 myModule.controller('MyCtrl', ['$scope',

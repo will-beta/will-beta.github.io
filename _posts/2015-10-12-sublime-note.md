@@ -62,6 +62,7 @@ MarkdownEditing
 * 配置
 
 选择菜单Preferences > Package Settings > Markdown Editing > Markdown GFM Editing - Users，增加以下配置
+
 ```json
 //使用黑色皮肤
 "color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",

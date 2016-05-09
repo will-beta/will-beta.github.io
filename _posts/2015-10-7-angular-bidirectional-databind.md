@@ -53,6 +53,7 @@ angular支持的表达式类型
 ====================================
 
 HelloAngular_MVC.html
+
 ```html
 <!doctype html>
 <html ng-app>
@@ -72,6 +73,7 @@ HelloAngular_MVC.html
 
 
 HelloAngular_MVC.js
+
 ```javascript
 function HelloAngular($scope) {
     $scope.greeting = {
@@ -89,6 +91,7 @@ function HelloAngular($scope) {
 ====================================
 
 HelloAngular_bind.html
+
 ```html
 <!doctype html>
 <html ng-app>
@@ -107,6 +110,7 @@ HelloAngular_bind.html
 ```
 
 HelloAngular_bind.js
+
 ```javascript
 function HelloAngular($scope) {
     $scope.greeting = {
@@ -124,6 +128,7 @@ function HelloAngular($scope) {
 ====================================
 
 Form.html
+
 ```html
 <!doctype html>
 <html ng-app="UserInfoModule">
@@ -188,6 +193,7 @@ Form.html
 
 
 Form.js
+
 ```javascript
 var userInfoModule = angular.module('UserInfoModule', []);
 userInfoModule.controller('UserInfoCtrl', ['$scope',
@@ -223,6 +229,7 @@ userInfoModule.controller('UserInfoCtrl', ['$scope',
 ====================================
 
 CSS1.html
+
 ```html
 <!doctype html>
 <html ng-app="MyCSSModule">
@@ -246,6 +253,7 @@ CSS1.html
 
 
 CSS1.js
+
 ```javascript
 var myCSSModule = angular.module('MyCSSModule', []);
 myCSSModule.controller('CSSCtrl', ['$scope',
@@ -260,6 +268,7 @@ myCSSModule.controller('CSSCtrl', ['$scope',
 
 
 CSS1.js
+
 ```javascript
 .text-red {
     background-color: #ff0000;
@@ -278,6 +287,7 @@ ng-show和ng-hide
 ====================================
 
 NgShow.html
+
 ```html
 <!doctype html>
 <html ng-app="MyCSSModule">
@@ -305,6 +315,7 @@ NgShow.html
 
 
 NgShow.js
+
 ```javascript
 var myCSSModule = angular.module('MyCSSModule', []);
 myCSSModule.controller('DeathrayMenuController', ['$scope',
@@ -326,6 +337,7 @@ ng-class
 ====================================
 
 NgClass.html
+
 ```html
 <!doctype html>
 <html ng-app="MyCSSModule">
@@ -350,6 +362,7 @@ NgClass.html
 
 
 NgClass.js
+
 ```javascript
 var myCSSModule = angular.module('MyCSSModule', []);
 myCSSModule.controller('HeaderController', ['$scope',
@@ -372,6 +385,7 @@ myCSSModule.controller('HeaderController', ['$scope',
 
 
 NgClass.css
+
 ```javascript
 .error {
     background-color: red;

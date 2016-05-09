@@ -189,6 +189,7 @@ Listener
 * 设置Language为javascript。
 * 设置Parameters为准备要在之后脚本访问的变量，如：${ur_hear} ${catid}
 * 设置script：
+
 ```javascript
 var re=new RegExp(“id=(\\d+)”,”ig”);
 var arr=re.exec(args[0]);
@@ -199,6 +200,7 @@ if(!RegExp.$1||RegExp.$1!=args[1]{
 ```
 
 若用BeanShellAssertion判断，如下script：
+
 ```java
 java.util.regex.Pattern p=java.util.regex.Pattern.compile(“id=(\\d+)”);
 java.util.regex.Matcher m=p.matcher(bsh.args[0]);
@@ -249,6 +251,7 @@ if(found){
 ### 写插件: dependencies/com.immoc.jar
 
 Match.java
+
 ```java
 package com.immoc;
 
@@ -267,6 +270,7 @@ plugin_dependency_paths=../dependencies
 ### 写测试
 
 在Thread下添加BeanShell Sampler,配置其Script:
+
 ```java
 import com.immoc.Math;
 String ret = Math.sqrt ("2.0") ;
