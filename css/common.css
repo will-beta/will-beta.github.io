@@ -66,6 +66,8 @@ body {
 
 h1 {
     color: #5FB8C7;
+    background-color: #3C3C3C;
+    padding: 0.3em;
     margin-top: 2em;
     margin-bottom: 1em;
 }
