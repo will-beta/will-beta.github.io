@@ -81,7 +81,7 @@ layout: others
                 {% elsif page == 1 %}
                 <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
                 {% else %}
-                <a href="{{ site.paginate_path | replace: ':num', page }}" data-v1="{{site.paginate_path | prepend: ''}}" data-v2="{{site.baseurl | prepend: ''}}">{{page }}</a>
+                <a href="{{ ''| prepend: site.paginate_path | replace: ':num', page }}" data-v1="{{ '' | prepend: site.paginate_path | prepend: ''}}" data-v2="{{ '' | prepend: site.baseurl | prepend: ''}}">{{page }}</a>
                 {% endif %}
                 {% endfor %}
 
