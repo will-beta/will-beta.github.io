@@ -35,6 +35,7 @@ man package
 ## mac
 
 * homebrew
+* brew cask
 
 ## linux
 
