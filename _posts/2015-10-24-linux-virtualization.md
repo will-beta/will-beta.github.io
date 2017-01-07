@@ -242,9 +242,9 @@ docker：轻量级的虚拟化程序
 *    移除
       docker rm
 *    附加
-      docker attach
-
-
+      docker attach
+*    监控
+      docker logs -t -f <container name> --since <datetime>
 
 参考
 ------------------------------------------
