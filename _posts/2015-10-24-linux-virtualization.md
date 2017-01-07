@@ -244,7 +244,7 @@ docker：轻量级的虚拟化程序
 *    附加
       docker attach
 *    监控
-      docker logs -t -f <container name> --since <datetime>
+      docker logs -t -f <container> --since <datetime>
 
 参考
 ------------------------------------------
