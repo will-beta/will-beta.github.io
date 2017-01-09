@@ -127,6 +127,10 @@ App工程
 * 其它所有层
 * 业务层依赖的组件
 * Npgsql.EntityFrameworkCore.PostgreSQL
+* Microsoft.Extensions.Configuration.Json
+* Microsoft.Extensions.Logging.Console
+* Microsoft.Extensions.Logging.Debug
+
 
 
 
