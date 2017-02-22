@@ -34,6 +34,6 @@ create table T1(ID int identity primary key,
 参考
 ===================
 
-[Temporal Tables](https://msdn.microsoft.com/en-us/library/dn935015.aspx)
-[Sql Server 2016 新功能——内置的 Temporal Tables](http://www.cnblogs.com/Gin-23333/p/5936120.html)
-[SQL Server ->> 深入探讨SQL Server 2016新特性之 --- Temporal Table（历史表）](http://www.cnblogs.com/jenrrychen/p/5196948.html)
+* [Temporal Tables](https://msdn.microsoft.com/en-us/library/dn935015.aspx)
+* [Sql Server 2016 新功能——内置的 Temporal Tables](http://www.cnblogs.com/Gin-23333/p/5936120.html)
+* [SQL Server ->> 深入探讨SQL Server 2016新特性之 --- Temporal Table（历史表）](http://www.cnblogs.com/jenrrychen/p/5196948.html)
