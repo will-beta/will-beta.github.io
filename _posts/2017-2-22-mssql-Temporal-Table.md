@@ -12,11 +12,15 @@ sitemap:
 =================
 
 ```sql
-create table T1(ID int identity primary key,
+
+create table T1(
+	ID int identity primary key,
     COl1 nvarchar(50),
     TimeFrom datetime2 generated always as row start,
     TimeTo datetime2 generated always as row end,
-    period for system_time(TimeFrom,TimeTo)) with (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.T1History));
+    period for system_time(TimeFrom,TimeTo)
+) with (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.T1History));
+
 ```
 
 
