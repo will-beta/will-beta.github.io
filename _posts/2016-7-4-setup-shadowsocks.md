@@ -69,15 +69,14 @@ pip install shadowsocks
 
 
 开启防火墙
-=====================================================
+=====================================================XTE
 
-
-
-
-
+/etc/sysconfig/iptables :
+-A INPUT -m state NEW -m tcp -p tcp --dport 8388 -j ACCEPT
 
 
 运行shadowsocks服务
 =====================================================
 
-ssserver -k <密码>
+加入开机启动 /ete/rc.r/rc.local:
+ssserver -k <password> -p <port> &
