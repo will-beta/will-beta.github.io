@@ -101,7 +101,7 @@ CentOS7:/lib/systemd/system/shadowsocks-server.service
 Description = ShadowSocks Server
 [Service]
 Type = forking
-ExecStart = /usr/bin/ssserver -k 123.com -p 8388 
+ExecStart = /usr/bin/ssserver -k <password> -p 8388 
 TimeoutStartSec = 0
 
 [Install]
