@@ -65,3 +65,4 @@ sitemap:
 
 # 参考
 [What's the difference between Application.ThreadException and AppDomain.CurrentDomain.UnhandledException?](http://stackoverflow.com/questions/2014562/whats-the-difference-between-application-threadexception-and-appdomain-currentd)
+[异常处理之ThreadException、unhandledException及多线程异常处理](http://www.cnblogs.com/luminji/archive/2011/01/05/1926033.html)
