@@ -59,3 +59,9 @@ sitemap:
 
 * 捕获处理引发应用程序崩溃的最终异常，通过设置AppDomain.CurrentDomain.UnhandledException处理器。
 * 依照实际情况选择是否掩藏UI线程和任务工厂抛出的异常，分别通过设置Application.ThreadException事件处理器和TaskScheduler.UnobservedTaskException事件处理器。
+
+
+
+
+# 参考
+[What's the difference between Application.ThreadException and AppDomain.CurrentDomain.UnhandledException?](http://stackoverflow.com/questions/2014562/whats-the-difference-between-application-threadexception-and-appdomain-currentd)
